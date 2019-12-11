@@ -1,0 +1,21 @@
+{
+    "description": "Clean Taobao URL",
+    "manifest_version": 2,
+    "name": "Clean Taobao URL",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "tabs",
+        "webRequest",
+        "*://detail.tmall.com/*",
+        "*://item.taobao.com/*",
+        "webRequestBlocking"
+    ],
+    "version": "1.0"
+}
